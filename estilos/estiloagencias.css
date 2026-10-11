@@ -1,0 +1,409 @@
+/* ============================================
+   OFICINAS EN ABANCAY (estilo oficial Oltursa)
+============================================ */
+*{
+  padding: 0;
+  margin: 0;
+}
+.oficina-section {
+  width: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #fff;
+  margin-top: -10px;
+
+}
+
+/* Banner */
+.oficina-banner {
+  width: 100%;
+  height: 320px;
+  overflow: hidden;
+  background: #e5e7eb;
+}
+.oficina-banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+/* Contenido */
+.oficina-content {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 40px 20px 60px;
+}
+.oficina-title {
+  text-align: center;
+  font-size: 26px;
+  font-weight: 700;
+  color: #00AF42;
+  margin-bottom: 40px;
+}
+
+/* Grid */
+.oficina-grid {
+  display: flex;
+  align-items: flex-start;
+  gap: 40px;
+  justify-content: center;
+}
+
+/* Mapa de Perú */
+.oficina-mapa {
+  flex: 0 0 300px;
+  text-align: center;
+}
+.oficina-mapa img {
+  width: 100%;
+  max-width: 280px;
+  height: auto;
+  display: block;
+  margin: 0 auto 16px;
+}
+.mapa-leyenda {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  font-size: 13px;
+  color: #666;
+}
+.leyenda-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 3px;
+  display: inline-block;
+}
+.dot.verde {
+  background: #00AF42;
+}
+.dot.gris {
+  background: #d1d5db;
+}
+
+/* Info card */
+.oficina-info {
+  flex: 1;
+  max-width: 420px;
+}
+.info-card {
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+.info-row {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 14px;
+  font-size: 14px;
+  line-height: 1.5;
+}
+.info-label {
+  font-weight: 700;
+  color: #333;
+  min-width: 80px;
+  flex-shrink: 0;
+}
+.info-value {
+  color: #555;
+}
+
+/* Google Maps real */
+.mapa-google {
+  margin-top: 18px;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid #e5e7eb;
+  position: relative;
+  background: #f3f4f6;
+  height: 220px;
+}
+.mapa-google iframe {
+  width: 100%;
+  height: 100%;
+  display: block;
+  border: 0;
+}
+.btn-maps {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: #fff;
+  color: #1a73e8;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 6px 12px;
+  border-radius: 6px;
+  text-decoration: none;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.15);
+  transition: background 0.2s;
+  z-index: 2;
+}
+.btn-maps:hover {
+  background: #f0f0f0;
+}
+/* CONTENEDOR DE LAS TRES COLUMNAS */
+.final {
+    background-color: gray;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 7px;
+}
+
+.row-final {
+    width: 100%;
+    max-width: 1040px;
+    margin: 0 auto;
+    display: flex;
+    align-items: stretch;
+    gap: 24px;
+    margin-top: 70px;
+}
+
+/* COLUMNAS */
+.column-final {
+    flex: 1;
+    min-width: 0;
+}
+
+/* TARJETAS */
+.card-final {
+    width: 100%;
+    height: 100%;
+    background-color: #dedcda;
+    border: none;
+    border-radius: 9px;
+    padding: 16px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+/* CABECERA */
+.header-final {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 20px 16px;
+    border-bottom: 2px solid #cbc9c7;
+    color: #263746;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+/* CONTENIDO DE CONTACTOS */
+.contenido-final {
+    padding: 18px 20px 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
+}
+
+.enlace-contacto {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    color: #111;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.enlace-contacto>i {
+    width: 22px;
+    text-align: center;
+    font-size: 21px;
+    color: #111;
+}
+
+.enlace-contacto span {
+    color: #737373;
+    line-height: 1.5;
+}
+
+.enlace-contacto strong {
+    color: #111;
+    font-weight: normal;
+}
+
+.enlace-contacto:hover,
+.lista-final a:hover {
+    color: #00af42;
+}
+
+/* LISTAS DE DESTINOS Y LINKS */
+.lista-final {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    padding: 8px 20px 10px;
+    margin-top: 3px;
+}
+
+.lista-final a {
+    color: #111;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px 0;
+    transition: color 0.2s;
+}
+
+.footer {
+    background-color: #f5f5f5;
+    padding: 40px 60px 30px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    color: #4b5563;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-top: 80px;
+}
+
+/* Lado izquierdo */
+.footer-left {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.logo {
+    font-size: 32px;
+    font-weight: 700;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.logo-img {
+    width: 36px;
+    height: 28px;
+    margin-right: -60px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 12px;
+}
+
+.social-icons a {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 16px;
+    text-decoration: none;
+    transition: transform 0.2s;
+}
+
+.social-icons a:hover {
+    transform: scale(1.1);
+}
+
+.facebook {
+    background: #1877f2;
+}
+
+.youtube {
+    background: #ff0000;
+}
+
+.instagram {
+    background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+}
+
+.tiktok {
+    background: #000000;
+}
+
+.lang-selector {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    padding: 6px 12px;
+    background: white;
+    font-size: 14px;
+    cursor: pointer;
+    width: fit-content;
+}
+
+.lang-selector img {
+    width: 20px;
+    height: 14px;
+    object-fit: cover;
+}
+
+/* Lado derecho */
+.footer-right {
+    text-align: left;
+}
+
+.footer-right h4 {
+    font-size: 16px;
+    font-weight: 600;
+    color: #1f2937;
+    margin-bottom: 16px;
+}
+
+.footer-right ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-right li {
+    margin-bottom: 12px;
+}
+
+.footer-right a {
+    color: #4b5563;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.2s;
+}
+
+.footer-right a:hover {
+    color: #16a34a;
+}
+
+.complaints {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.complaints img {
+    width: 28px;
+    height: 20px;
+}
+
+/* Línea y copyright */
+.footer-bottom {
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid #e5e7eb;
+    text-align: center;
+    font-size: 13px;
+    color: #6b7280;
+}
+

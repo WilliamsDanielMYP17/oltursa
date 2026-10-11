@@ -1,0 +1,500 @@
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oltursa</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Estilos -->
+    <link rel="stylesheet" href="estilos/estilo.css">
+    <link rel="stylesheet" href="estilos/responsive-destinos.css">
+
+    <link rel="stylesheet" href="fonts.css">
+    <link rel="stylesheet" href="estilos/navbar-global.css">
+
+    <!-- Font Awesome -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
+    <!-- JavaScript -->
+    <script defer src="js/script1.js"></script>
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar" aria-label="Navegación principal">
+
+        <div class="logo">
+            <a href="entregable.html" aria-label="Inicio Oltursa">
+                <img src="imagenes/logo.png" class="recorta" alt="Logo Oltursa">
+            </a>
+        </div>
+
+        <button class="menu-toggle" type="button"
+            aria-label="Abrir menú"
+            aria-expanded="false"
+            aria-controls="menu-principal">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <ul id="menu-principal">
+            <li><a href="nosotros.html">Nosotros</a></li>
+            <li><a href="cargos.html">Cargos</a></li>
+            <li><a href="seguiminetos.html">Seguimientos</a></li>
+            <li><a href="promociones.html">Promociones</a></li>
+            <li><a href="agencias.html">Agencias</a></li>
+        </ul>
+
+        <select class="label1" aria-label="Idioma">
+            <option value="es">ESP</option>
+            <option value="en">ENG</option>
+        </select>
+
+        <a href="acceder.html" class="btn-acceder">
+            Acceder <span class="icon-user-tie"></span>
+        </a>
+
+    </nav>
+
+    <!-- CONTENIDO -->
+    <div id="contenido">
+        <div id="inicio">
+
+            <!-- SLIDER -->
+            <section id="container-slider">
+
+                <a href="javascript:fntExecuteSlide('prev')" class="arrowPrev">❮</a>
+                <a href="javascript:fntExecuteSlide('next')" class="arrowNext">❯</a>
+
+                <ul class="listslider">
+                    <li><a itList="itList_0" class="item-select-slid"></a></li>
+                    <li><a itList="itList_1"></a></li>
+                </ul>
+
+                <ul id="slider">
+                    <li style="opacity: 1;">
+                        <img src="imagenes/img1.png" alt="">
+                    </li>
+                    <li style="opacity: 1;">
+                        <img src="imagenes/img2.png" alt="">
+                    </li>
+                </ul>
+
+            </section>
+
+            <!-- BUSCADOR -->
+            <div class="busqueda">
+
+                <div class="campo">
+                    <label>Origin</label>
+                    <input type="text" placeholder="Origin">
+                </div>
+
+                <div class="campo">
+                    <label>Destination</label>
+                    <input type="text" placeholder="Destination">
+                </div>
+
+                <div class="campo">
+                    <label>Departure</label>
+                    <input type="date" value="2026-10-04">
+                </div>
+
+                <div class="campo">
+                    <label>Return</label>
+                    <input type="date" value="2026-10-04">
+                </div>
+
+                <button class="btn-search">Buscar</button>
+
+            </div>
+
+            <!-- MÉTODOS DE PAGO -->
+            <div class="metodos-pagos">
+                <div class="pagos"><img src="imagenes/logo_visa.svg" alt="Visa"></div>
+                <div class="pagos"><img src="imagenes/logo_mastercard.svg" alt="Mastercard"></div>
+                <div class="pagos"><img src="imagenes/logo_amex.svg" alt="American Express"></div>
+                <div class="pagos"><img src="imagenes/logo_diners.svg" alt="Diners Club"></div>
+                <div class="pagos"><img src="imagenes/logo_yape.svg" alt="Yape"></div>
+                <div class="pagos"><img src="imagenes/logo_plin.svg" alt="Plin"></div>
+                <div class="pagos"><img src="imagenes/logo_pagoefectivo.svg" alt="PagoEfectivo"></div>
+                <div class="pagos"><img src="imagenes/logo_mercadopago.png" alt="Mercado Pago"></div>
+            </div>
+
+            <!-- DESTINOS -->
+            <main class="destino0">
+
+                <!-- Se eliminó el div vacío que podía generar espacio -->
+                <h1 data-aos="fade-up">
+                    Encuentra tu <span class="verde">destino!</span>
+                </h1>
+
+                <section>
+                    <div class="destinos" data-aos="fade-up">
+
+                        <article class="destino">
+                            <a href="abancay.html">
+                                <img src="imagenes/abancay.webp" alt="">
+                                <span class="nombre">Abancay</span>
+                            </a>
+                        </article>
+
+                        <article class="destino">
+                            <a href="arequipa.html">
+                                <img src="imagenes/arequipa.jpg" alt="">
+                                <span class="nombre">Arequipa</span>
+                            </a>
+                        </article>
+
+                        <article class="destino">
+                            <a href="camana.html">
+                                <img src="imagenes/camana.jpg" alt="">
+                                <span class="nombre">Camaná</span>
+                            </a>
+                        </article>
+
+                        <article class="destino">
+                            <a href="chiclayo.html">
+                                <img src="imagenes/chiclayo.jpg" alt="">
+                                <span class="nombre">Chiclayo</span>
+                            </a>
+                        </article>
+
+                        <article class="destino">
+                            <a href="chimbote.html">
+                                <img src="imagenes/chimbote.jpg" alt="">
+                                <span class="nombre">Chimbote</span>
+                            </a>
+                        </article>
+
+                        <article class="destino">
+                            <a href="cusco.html">
+                                <img src="imagenes/cusco.jpg" alt="">
+                                <span class="nombre">Cusco</span>
+                            </a>
+                        </article>
+
+                        <article class="destino">
+                            <a href="lima.html">
+                                <img src="imagenes/lima.jpg" alt="">
+                                <span class="nombre">Lima</span>
+                            </a>
+                        </article>
+
+                        <article class="destino">
+                            <a href="mancora.html">
+                                <img src="imagenes/mancora.jpg" alt="">
+                                <span class="nombre">Mancora</span>
+                            </a>
+                        </article>
+
+                        <article class="destino">
+                            <a href="moquegua.html">
+                                <img src="imagenes/moquegua.webp" alt="">
+                                <span class="nombre">Moquegua</span>
+                            </a>
+                        </article>
+
+                        <article class="destino">
+                            <a href="nazca.html">
+                                <img src="imagenes/nazca.jpg" alt="">
+                                <span class="nombre">Nazca</span>
+                            </a>
+                        </article>
+
+                        <article class="destino">
+                            <a href="piura.html">
+                                <img src="imagenes/piura.jpg" alt="">
+                                <span class="nombre">Piura</span>
+                            </a>
+                        </article>
+
+                        <article class="destino">
+                            <a href="tacna.html">
+                                <img src="imagenes/tacna.jpg" alt="">
+                                <span class="nombre">Tacna</span>
+                            </a>
+                        </article>
+
+                        <article class="destino">
+                            <a href="trujillo.html">
+                                <img src="imagenes/trujillo.jpg" alt="">
+                                <span class="nombre">Trujillo</span>
+                            </a>
+                        </article>
+
+                        <article class="destino">
+                            <a href="tumbes.html">
+                                <img src="imagenes/tumbes.jpg" alt="">
+                                <span class="nombre">Tumbes</span>
+                            </a>
+                        </article>
+
+                        <article class="destino destino-no-enlazado" aria-label="Descubre más destinos">
+                            <img src="imagenes/decubremas.avif" alt="">
+                            <span class="nombre">Viaja por todo el Perú!</span>
+                        </article>
+
+                    </div>
+                </section>
+
+                <!-- EXPERIENCIA OLTURSA -->
+                <section class="experiencia" data-aos="fade-right">
+
+                    <h1 data-aos="fade-right">
+                        Disfruta la experiencia <span class="verde">Oltursa</span>
+                    </h1>
+
+                    <section>
+                        <div class="row">
+
+                            <div class="column">
+                                <div class="caja" style="background-color: #f0b24f;">
+                                    <span class="badge" style="background-color: rgb(255, 85, 0);">Comodidades</span>
+                                    <h3>Un viaje placentero</h3>
+                                    <p>Aire acondicionado, servicios higiénicos, video TV, y más</p>
+                                    <div class="icon icon-tv"></div>
+                                </div>
+                            </div>
+
+                            <div class="column">
+                                <div class="caja" style="background-color: #c5c5c5;">
+                                    <span class="badge" style="background-color: rgb(155, 50, 155);">Comfort</span>
+                                    <h3>Un descanso saludable</h3>
+                                    <p>Disfruta de nuestros cómodos asientos ergonómicos</p>
+                                    <div class="icon icon-cloud"></div>
+                                </div>
+                            </div>
+
+                            <div class="column">
+                                <div class="caja" style="background-color: #21d374;">
+                                    <span class="badge" style="background-color: rgb(4, 181, 4);">Seguridad</span>
+                                    <h3>Control en cada unidad</h3>
+                                    <p>Con la seguridad de nuestro sistema de monitoreo GPS 24/7</p>
+                                    <div class="icon icon-clipboard"></div>
+                                </div>
+                            </div>
+
+                            <div class="column">
+                                <div class="caja" style="background-color: #b8b8b8;">
+                                    <span class="badge" style="background-color: rgb(52, 130, 239);">Destinos</span>
+                                    <h3>Llega a más lugares</h3>
+                                    <p>Descubre nuestra red de destinos y explora el Perú</p>
+                                    <div class="icon icon-earth"></div>
+                                </div>
+                            </div>
+
+                            <div class="column">
+                                <div class="caja" style="background-color: #f8ea50;">
+                                    <span class="badge" style="background-color: #dca80f;">Terminales</span>
+                                    <h3>Instalaciones a tu servicio</h3>
+                                    <p>Accede a nuestras terminales modernas y bien equipadas</p>
+                                    <div class="icon icon-office"></div>
+                                </div>
+                            </div>
+
+                            <div class="column">
+                                <div class="caja" style="background-color: #f5a3c7;">
+                                    <span class="badge" style="background-color: #f378ad;">Flota</span>
+                                    <h3>Seguridad en cada viaje</h3>
+                                    <p>Una flota moderna y equipada con lo último en tecnología</p>
+                                    <div class="icon icon-truck"></div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </section>
+                </section>
+
+                <!-- SERVICIOS CORPORATIVOS -->
+                <section>
+                    <h1>Tu socio en movilidad corporativa</h1>
+
+                    <div class="row" data-aos="fade-up">
+
+                        <div class="column">
+                            <div class="servicio">
+                                <a href="convenioscorporativos.html">
+                                    <img src="imagenes/corporativo_serviciosprivados.jpg" class="volteada" alt="">
+                                    <div class="servicio-content">
+                                        <h3>Convenios corporativos</h3>
+                                        <p>Optimiza los viajes de tu empresa con tarifas preferenciales y beneficios exclusivos.</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="column">
+                            <div class="servicio">
+                                <a href="serviciosprivados.html">
+                                    <img src="imagenes/serviciosprivados.jpg" alt="">
+                                    <div class="servicio-content">
+                                        <h3>Servicios privados</h3>
+                                        <p>Traslados seguros y cómodos diseñados a la medida de tus necesidades.</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="column">
+                            <div class="servicio">
+                                <a href="alianzascomerciales.html">
+                                    <img src="imagenes/alianzascomerciales.jpg" alt="">
+                                    <div class="servicio-content">
+                                        <h3>Alianzas comerciales</h3>
+                                        <p>Generamos sinergias estratégicas para ampliar el alcance y potenciar tu negocio.</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+
+                <!-- CONTACTOS, DESTINOS Y LINKS -->
+                <section class="row-final">
+
+                    <section class="column-final">
+                        <div class="card card-final">
+                            <div class="card-header header-final">
+                                <span>Contáctanos</span>
+                                <i class="fas fa-headset icono-contacto"></i>
+                            </div>
+
+                            <div class="contenido-final">
+                                <a href="tel:017085000" class="enlace-contacto">
+                                    <i class="fas fa-phone-volume"></i>
+                                    <span>Central telefónica:<br><strong>(01) 708-5000</strong></span>
+                                </a>
+
+                                <a href="https://api.whatsapp.com/send?phone=51994656518" class="enlace-contacto">
+                                    <i class="fab fa-whatsapp"></i>
+                                    <span>WhatsApp:<br><strong>994 656 518</strong></span>
+                                </a>
+
+                                <a href="mailto:correo@ejemplo.com" class="enlace-contacto">
+                                    <i class="far fa-envelope"></i>
+                                    <span>Email:<br><strong>Envíanos un email</strong></span>
+                                </a>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="column-final">
+                        <div class="card card-final">
+                            <div class="card-header header-final">
+                                <span>Destinos populares</span>
+                                <i class="fas fa-bus icono-destinos"></i>
+                            </div>
+
+                            <div class="lista-final">
+                                <a href="arequipa.html">Arequipa</a>
+                                <a href="cusco.html">Cusco</a>
+                                <a href="lima.html">Lima</a>
+                                <a href="trujillo.html">Trujillo</a>
+                                <a href="tumbes.html">Tumbes</a>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="column-final">
+                        <div class="card card-final">
+                            <div class="card-header header-final">
+                                <span>Links de interés</span>
+                                <i class="fas fa-paperclip icono-links"></i>
+                            </div>
+
+                            <div class="lista-final">
+                                <a href="convenioscorporativos.html">Corporativo</a>
+                                <a href="cargos.html">Cargo</a>
+                                <a href="seguiminetos.html">Seguimiento de Envío</a>
+                                <a href="promociones.html">Promociones</a>
+                                <a href="agencias.html">Agencias</a>
+                            </div>
+                        </div>
+                    </section>
+
+                </section>
+
+                <!-- FOOTER -->
+                <footer class="footer">
+
+                    <div class="footer-content">
+
+                        <div class="footer-left">
+
+                            <div class="logo">
+                                <span class="logo-img"></span>
+                                <img src="imagenes/logofinal.png" alt="Logo Oltursa">
+                            </div>
+
+                            <div class="social-icons">
+                                <a href="https://www.tiktok.com/@oltursa" class="tiktok" title="TikTok" style="color: white;">♪</a>
+
+                                <a href="https://www.facebook.com/oltursa/" class="facebook" title="Facebook">
+                                    <span class="icon-facebook2" style="color: white;"></span>
+                                </a>
+
+                                <a href="https://www.youtube.com/oltursabuscama" class="youtube" title="YouTube">
+                                    <span class="icon-youtube" style="color: white;"></span>
+                                </a>
+
+                                <a href="https://www.instagram.com/oltursaoficial" class="instagram" title="Instagram">
+                                    <span class="icon-instagram" style="color: white;"></span>
+                                </a>
+                            </div>
+
+                        </div>
+
+                        <div class="footer-right">
+                            <h4>Policies</h4>
+                            <ul>
+                                <li><a href="#">Terms and Conditions of Use</a></li>
+                                <li><a href="#">Privacy Policy</a></li>
+                                <li>
+                                    <a href="#" class="complaints">
+                                        <span style="font-size:18px;">📘</span>
+                                        Complaints book
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+                    <div class="footer-bottom">
+                        Empresa de Transporte Turístico Olano S.A.<br>
+                        © 2026 All rights reserved
+                    </div>
+
+                </footer>
+
+            </main>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Animaciones -->
+    <script>
+        AOS.init({
+            offset: 200,
+            duration: 1000
+        });
+    </script>
+
+</body>
+</html>
+```

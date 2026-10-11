@@ -1,0 +1,481 @@
+/* ============================================
+   ESTILOS - SERVICIO DE CARGO
+============================================ */
+
+.cargo-section,
+.nosotros-completo {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  color:#00AF42;
+}
+
+/* Título principal */
+.cargo-title,
+.valores-section h2,
+.trayectoria-section h2 {
+  text-align: center;
+  font-size: 28px;
+  font-weight: 700;
+  color:#00AF42;
+  margin-bottom: 30px;
+}
+
+/* ---- Tarjetas de servicios (Consolidado / Expresso) ---- */
+.cargo-cards {
+  display: flex;
+  gap: 24px;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.cargo-card {
+  flex: 1;
+  min-width: 280px;
+  max-width: 420px;
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+}
+
+.cargo-card-img {
+  width: 100%;
+  height: 200px;
+  background: #e5e7eb; /* espacio para tu imagen */
+  overflow: hidden;
+}
+
+.cargo-card-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.cargo-card-body {
+  padding: 18px 20px 22px;
+}
+
+.cargo-card-body h3 {
+  font-size: 17px;
+  font-weight: 700;
+  margin-bottom: 8px;
+  color: #1a1a1a;
+}
+
+.cargo-card-body p {
+  font-size: 13px;
+  line-height: 1.5;
+  color: #555;
+}
+
+/* Link términos */
+.terminos-link {
+  text-align: center;
+  margin: 20px 0 40px;
+}
+
+.terminos-link a {
+  color: #00AF42;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.terminos-link a:hover {
+  text-decoration: underline;
+}
+
+/* ---- Formulario Contáctenos ---- */
+.contacto-form-box {
+  max-width: 520px;
+  margin: 0 auto 50px;
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 30px 28px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.06);
+}
+
+.contacto-form-box h3 {
+  text-align: center;
+  font-size: 20px;
+  margin-bottom: 24px;
+  color: #1a1a1a;
+}
+
+.cargo-form .form-group {
+  margin-bottom: 16px;
+}
+
+.cargo-form label {
+  display: block;
+  font-size: 13px;
+  color: #444;
+  margin-bottom: 5px;
+}
+
+.cargo-form .required {
+  color: #e53e3e;
+}
+
+.cargo-form input,
+.cargo-form textarea {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 14px;
+  outline: none;
+  font-family: inherit;
+  transition: border-color 0.2s;
+}
+
+.cargo-form input:focus,
+.cargo-form textarea:focus {
+  border-color: #00AF42;
+}
+
+.cargo-form textarea {
+  resize: vertical;
+  min-height: 90px;
+}
+
+.btn-enviar {
+  display: block;
+  width: 140px;
+  margin: 24px auto 0;
+  padding: 10px 0;
+  background-color: #00AF42;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.25s;
+}
+
+.btn-enviar:hover {
+  background-color: #078b35;
+}
+
+/* ---------- BENEFICIOS ---------- */
+.beneficios-section {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.beneficios-section h2 {
+  font-size: 24px;
+  color: #1f2937;
+  margin-bottom: 35px;
+}
+
+.grid-beneficios {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px 20px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.beneficio-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.icono-beneficio {
+  font-size: 28px;
+  color: #00AF42;
+}
+
+.beneficio-item p {
+  font-size: 13px;
+  color: #555;
+  line-height: 1.4;
+  max-width: 140px;
+}
+/* CONTENEDOR DE LAS TRES COLUMNAS */
+.final {
+    background-color: gray;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 7px;
+}
+
+.row-final {
+    width: 100%;
+    max-width: 1040px;
+    margin: 0 auto;
+    display: flex;
+    align-items: stretch;
+    gap: 24px;
+    margin-top: 70px;
+}
+
+/* COLUMNAS */
+.column-final {
+    flex: 1;
+    min-width: 0;
+}
+
+/* TARJETAS */
+.card-final {
+    width: 100%;
+    height: 100%;
+    background-color: #dedcda;
+    border: none;
+    border-radius: 9px;
+    padding: 16px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+/* CABECERA */
+.header-final {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 20px 16px;
+    border-bottom: 2px solid #cbc9c7;
+    color: #263746;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+/* CONTENIDO DE CONTACTOS */
+.contenido-final {
+    padding: 18px 20px 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
+}
+
+.enlace-contacto {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    color: #111;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.enlace-contacto>i {
+    width: 22px;
+    text-align: center;
+    font-size: 21px;
+    color: #111;
+}
+
+.enlace-contacto span {
+    color: #737373;
+    line-height: 1.5;
+}
+
+.enlace-contacto strong {
+    color: #111;
+    font-weight: normal;
+}
+
+.enlace-contacto:hover,
+.lista-final a:hover {
+    color: #00af42;
+}
+
+/* LISTAS DE DESTINOS Y LINKS */
+.lista-final {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    padding: 8px 20px 10px;
+    margin-top: 3px;
+}
+
+.lista-final a {
+    color: #111;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px 0;
+    transition: color 0.2s;
+}
+
+.footer {
+    background-color: #f5f5f5;
+    padding: 40px 60px 30px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    color: #4b5563;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-top: 80px;
+}
+
+/* Lado izquierdo */
+.footer-left {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.logo {
+    font-size: 32px;
+    font-weight: 700;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.logo-img {
+    width: 36px;
+    height: 28px;
+    margin-right: -60px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 12px;
+}
+
+.social-icons a {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 16px;
+    text-decoration: none;
+    transition: transform 0.2s;
+}
+
+.social-icons a:hover {
+    transform: scale(1.1);
+}
+
+.facebook {
+    background: #1877f2;
+}
+
+.youtube {
+    background: #ff0000;
+}
+
+.instagram {
+    background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+}
+
+.tiktok {
+    background: #000000;
+}
+
+.lang-selector {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    padding: 6px 12px;
+    background: white;
+    font-size: 14px;
+    cursor: pointer;
+    width: fit-content;
+}
+
+.lang-selector img {
+    width: 20px;
+    height: 14px;
+    object-fit: cover;
+}
+
+/* Lado derecho */
+.footer-right {
+    text-align: left;
+}
+
+.footer-right h4 {
+    font-size: 16px;
+    font-weight: 600;
+    color: #1f2937;
+    margin-bottom: 16px;
+}
+
+.footer-right ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-right li {
+    margin-bottom: 12px;
+}
+
+.footer-right a {
+    color: #4b5563;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.2s;
+}
+
+.footer-right a:hover {
+    color: #16a34a;
+}
+
+.complaints {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.complaints img {
+    width: 28px;
+    height: 20px;
+}
+
+/* Línea y copyright */
+.footer-bottom {
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid #e5e7eb;
+    text-align: center;
+    font-size: 13px;
+    color: #6b7280;
+}
+/* ---------- RESPONSIVE ---------- */
+@media (max-width: 768px) {
+  .cargo-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .grid-beneficios {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .bloque-mv,
+  .bloque-mv.reverse {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 480px) {
+  .grid-beneficios {
+    grid-template-columns: 1fr;
+  }
+}

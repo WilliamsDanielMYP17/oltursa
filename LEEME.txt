@@ -1,0 +1,17 @@
+PROYECTO OLTURSA INTEGRADO
+
+Archivo principal: entregable.html
+
+Cambios realizados:
+- Los 14 destinos llevan a páginas HTML independientes.
+- La tarjeta final de “Viaja por todo el Perú” se mantiene visual, pero no es un enlace.
+- Menú hamburguesa funcional hasta 950 px.
+- CSS responsive y animaciones @keyframes, conservando los colores y la estructura base del CSS original.
+- Se conservaron el HTML principal, CSS y JavaScript que compartiste.
+
+IMPORTANTE: el paquete no contiene la carpeta original “imagenes” porque no venía entre los archivos adjuntos. Copia tu carpeta imagenes original en esta misma carpeta para recuperar las fotos y el logo.
+
+Abre esta carpeta en Visual Studio Code y ejecuta entregable.html con Live Server.
+
+
+ACTUALIZACIÓN: La barra verde de navegación está fija en la parte superior y se incluye en la página principal, los destinos y las demás secciones. Los enlaces permiten cambiar de página sin perder la barra. En móvil, el menú se abre con el botón de tres líneas.

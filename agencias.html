@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos/estiloagencias.css">
+    <title>Document</title>
+<link rel="stylesheet" href="estilos/navbar-fijo.css">
+<link rel="stylesheet" href="estilos/responsive-destinos.css">
+<link rel="stylesheet" href="fonts.css">
+<script defer src="js/navbar-fijo.js"></script>    <link rel="stylesheet" href="estilos/navbar-global.css">
+</head>
+
+<body>
+<!-- Barra de navegación fija compartida -->
+<nav class="navbar" aria-label="Navegación principal">
+  <div class="logo"><a href="entregable.html" aria-label="Inicio Oltursa"><img src="imagenes/logo.png" class="recorta" alt="Logo Oltursa"></a></div>
+  <button class="menu-toggle" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="menu-principal"><span></span><span></span><span></span></button>
+  <ul id="menu-principal">
+    <li><a href="nosotros.html">Nosotros</a></li><li><a href="cargos.html">Cargos</a></li><li><a href="seguiminetos.html">Seguimientos</a></li><li><a href="promociones.html">Promociones</a></li><li><a href="agencias.html">Agencias</a></li>
+  </ul>
+  <select class="label1" aria-label="Idioma"><option value="es">ESP</option><option value="en">ENG</option></select>
+  <a href="acceder.html" class="btn-acceder">Acceder <span class="icon-user-tie"></span></a>
+</nav>
+
+    <!-- ==================== OFICINAS EN ABANCAY ==================== -->
+    <section class="oficina-section">
+        <!-- Banner superior -->
+        <div class="oficina-banner">
+            <!-- Poné acá la imagen de los buses (la misma que usás en Chiclayo) -->
+            <img src="imagenes/agencias.jpg" alt="Terminal Oltursa">
+        </div>
+
+        <!-- Contenido -->
+        <div class="oficina-content">
+            <h2 class="oficina-title">Oficinas en Abancay</h2>
+
+            <div class="oficina-grid">
+                <!-- Mapa de Perú -->
+                <div class="oficina-mapa">
+                    <img src="https://www.oltursa.pe/assets/img/mapa-peru-oficinas.png"
+                        alt="Mapa de Perú - Oficinas Oltursa"
+                        onerror="this.src='https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Peru_location_map.svg/600px-Peru_location_map.svg.png'">
+                    <div class="mapa-leyenda">
+                        <span class="leyenda-item">
+                            <span class="dot verde"></span> Con oficinas
+                        </span>
+                        <span class="leyenda-item">
+                            <span class="dot gris"></span> Sin oficinas
+                        </span>
+                    </div>
+                </div>
+
+                <!-- Info de la oficina -->
+                <div class="oficina-info">
+                    <div class="info-card">
+                        <div class="info-row">
+                            <span class="info-label">Dirección:</span>
+                            <span class="info-value">Terminal Terrestre: Av. Pachacutec s/n, Counter N° 206</span>
+                        </div>
+                        <div class="info-row">
+                            <span class="info-label">Teléfono:</span>
+                            <span class="info-value">(83) 324 708</span>
+                        </div>
+                        <div class="info-row">
+                            <span class="info-label">Horario:</span>
+                            <span class="info-value">Lunes a Domingo - De 7:00 am a 9:00 pm</span>
+                        </div>
+
+                        <!-- Google Maps REAL -->
+                        <div class="mapa-google">
+                            <iframe
+                                src="https://www.google.com/maps?q=Terminal+Terrestre+Abancay+Av.+Pachacutec&hl=es&z=16&output=embed"
+                                width="100%" height="220" style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade">
+                            </iframe>
+                            <a href="https://www.google.com/maps/search/?api=1&query=Terminal+Terrestre+Abancay+Av.+Pachacutec"
+                                class="btn-maps" target="_blank" rel="noopener">
+                                Abrir en Maps ↗
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="row-final">
+        <!-- CONTACTOS -->
+        <section class="column-final">
+            <div class="card card-final">
+                <div class="card-header header-final">
+                    <span>Contáctanos</span>
+                    <i class="fas fa-headset icono-contacto"></i>
+                </div>
+                <div class="contenido-final">
+                    <a href="tel:017085000" class="enlace-contacto">
+                        <i class="fas fa-phone-volume"></i>
+                        <span>Central telefónica:<br><strong>(01) 708-5000</strong></span>
+                    </a>
+                    <a href="https://api.whatsapp.com/send?phone=51994656518" class="enlace-contacto">
+                        <i class="fab fa-whatsapp"></i>
+                        <span>WhatsApp:<br><strong>994 656 518</strong></span>
+                    </a>
+                    <a href="mailto:correo@ejemplo.com" class="enlace-contacto">
+                        <i class="far fa-envelope"></i>
+                        <span>Email:<br><strong>Envíanos un email</strong></span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- DESTINOS -->
+        <section class="column-final">
+            <div class="card card-final">
+                <div class="card-header header-final">
+                    <span>Destinos populares</span>
+                    <i class="fas fa-bus icono-destinos"></i>
+                </div>
+                <div class="lista-final">
+                    <a href="#">Arequipa</a>
+                    <a href="#">Cusco</a>
+                    <a href="#">Lima</a>
+                    <a href="#">Trujillo</a>
+                    <a href="#">Tumbes</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- LINKS -->
+        <section class="column-final">
+            <div class="card card-final">
+                <div class="card-header header-final">
+                    <span>Links de interés</span>
+                    <i class="fas fa-paperclip icono-links"></i>
+                </div>
+                <div class="lista-final">
+                    <a href="corporativo.html">Corporativo</a>
+                    <a href="#">Cargo</a>
+                    <a href="seguiminetos.html">Seguimiento de Envío</a>
+                    <a href="#">Promociones</a>
+                    <a href="#">Agencias</a>
+                </div>
+            </div>
+        </section>
+    </section> <!-- ← aquí se cierra el row-final -->
+
+    <!-- FOOTER ahora va AFUERA y debajo -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-left">
+                <div class="logo">
+                    <span class="logo-img"></span>
+                    <img src="imagenes/logofinal.png">
+                </div>
+                <div class="social-icons">
+
+                    <a href="https://www.tiktok.com/@oltursa" class="tiktok" title="TikTok" style="color: white;">♪</a>
+
+                    <a href="https://www.facebook.com/oltursa/" class="facebook" title="Facebook">
+                        <span class="icon-facebook2" style="color: white;"></span>
+                    </a>
+                    <a href="https://www.youtube.com/oltursabuscama" class="youtube" title="YouTube">
+                        <span class="icon-youtube" style="color: white;"></span>
+                    </a>
+                    <a href="https://www.instagram.com/oltursaoficial" class="instagram" title="Instagram">
+                        <span class="icon-instagram" style="color: white;"></span>
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="footer-right">
+                <h4>Policies</h4>
+                <ul>
+                    <li><a href="#">Terms and Conditions of Use</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li>
+                        <a href="#" class="complaints">
+                            <span style="font-size:18px;">📘</span>
+                            Complaints book
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            Empresa de Transporte Turístico Olano S.A.<br>
+            © 2026 All rights reserved
+        </div>
+    </footer>
+    
+
+    <script src="js/script1.js"></script>
+</body>
+
+</html>

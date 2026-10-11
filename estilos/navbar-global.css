@@ -1,0 +1,307 @@
+
+/* =========================================
+   NAVBAR FIJA GLOBAL - OLTURSA
+========================================= */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    margin: 0;
+    padding: 0;
+    scroll-padding-top: 80px;
+}
+
+body {
+    margin: 0;
+    padding-top: 70px !important;
+}
+
+/* Barra verde fija */
+body > nav.navbar {
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+
+    width: 100% !important;
+    height: 70px !important;
+    min-height: 70px !important;
+
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+
+    gap: 14px !important;
+    margin: 0 !important;
+    padding: 0 5% !important;
+
+    background: #00AF42 !important;
+    border: none !important;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+
+    z-index: 99999 !important;
+}
+
+/* Logo */
+body > nav.navbar .logo {
+    flex: 0 0 auto;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+body > nav.navbar .logo img {
+    display: block;
+    width: 180px;
+    height: 48px;
+    object-fit: contain;
+}
+
+/* Opciones del menú */
+body > nav.navbar #menu-principal {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 12px;
+
+    list-style: none;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+body > nav.navbar #menu-principal li {
+    list-style: none;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+body > nav.navbar #menu-principal a {
+    display: block;
+    padding: 9px 10px;
+
+    color: white !important;
+    text-decoration: none !important;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    white-space: nowrap;
+
+    border-radius: 6px;
+    transition: background 0.2s, color 0.2s;
+}
+
+body > nav.navbar #menu-principal a:hover {
+    color: #111 !important;
+    background: #D9BA08 !important;
+}
+
+/* Idioma */
+body > nav.navbar .label1 {
+    width: 60px;
+    height: 34px;
+    margin: 0 !important;
+    padding: 5px;
+
+    color: white;
+    background: #10D05A;
+    border: none;
+    border-radius: 5px;
+}
+
+/* Botón acceder */
+body > nav.navbar .btn-acceder {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+
+    padding: 10px 16px;
+    margin: 0 !important;
+
+    color: white !important;
+    background: #F5C518;
+    text-decoration: none !important;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    white-space: nowrap;
+
+    border-radius: 25px;
+}
+
+body > nav.navbar .btn-acceder:hover {
+    background: #D9BA08 !important;
+    color: #111 !important;
+}
+
+/* Botón hamburguesa */
+body > nav.navbar .menu-toggle {
+    display: none;
+    flex-shrink: 0;
+
+    padding: 8px;
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+body > nav.navbar .menu-toggle span {
+    display: block;
+    width: 24px;
+    height: 3px;
+    margin: 4px 0;
+
+    background: white;
+    border-radius: 3px;
+    transition: transform 0.25s, opacity 0.25s;
+}
+
+body > nav.navbar .menu-toggle.activo span:first-child {
+    transform: translateY(7px) rotate(45deg);
+}
+
+body > nav.navbar .menu-toggle.activo span:nth-child(2) {
+    opacity: 0;
+}
+
+body > nav.navbar .menu-toggle.activo span:last-child {
+    transform: translateY(-7px) rotate(-45deg);
+}
+
+/* =========================================
+   ELIMINAR ESPACIOS EXTRA ANTES DEL SLIDER
+========================================= */
+
+#contenido,
+#inicio {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+}
+
+#container-slider {
+    display: block;
+    position: relative;
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+}
+
+/* =========================================
+   MENÚ RESPONSIVE
+========================================= */
+
+@media (max-width: 950px) {
+
+    body > nav.navbar {
+        height: 70px !important;
+        min-height: 70px !important;
+        padding: 0 4% !important;
+        gap: 8px !important;
+    }
+
+    body > nav.navbar .logo {
+        margin-right: auto !important;
+    }
+
+    body > nav.navbar .logo img {
+        width: 150px;
+        height: 42px;
+    }
+
+    body > nav.navbar .menu-toggle {
+        display: block;
+        margin-left: auto;
+    }
+
+    body > nav.navbar #menu-principal {
+        display: none;
+
+        position: absolute;
+        top: 70px;
+        left: 0;
+        right: 0;
+
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+
+        margin: 0 !important;
+        padding: 8px 4% 14px !important;
+
+        background: #00AF42;
+        box-shadow: 0 8px 18px rgba(0, 0, 0, 0.2);
+    }
+
+    body > nav.navbar #menu-principal.menu-abierto {
+        display: flex;
+        animation: menuBaja 0.22s ease both;
+    }
+
+    body > nav.navbar #menu-principal li,
+    body > nav.navbar #menu-principal li a {
+        width: 100%;
+    }
+
+    body > nav.navbar #menu-principal li a {
+        padding: 13px 8px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.22);
+    }
+
+    body > nav.navbar .label1 {
+        width: 52px;
+        padding: 5px;
+    }
+
+    body > nav.navbar .btn-acceder {
+        padding: 8px 10px;
+        font-size: 12px;
+    }
+}
+
+/* Móviles pequeños */
+@media (max-width: 430px) {
+
+    body > nav.navbar {
+        gap: 5px !important;
+        padding: 0 3% !important;
+    }
+
+    body > nav.navbar .logo img {
+        width: 115px;
+        height: 38px;
+    }
+
+    body > nav.navbar .label1 {
+        width: 45px;
+        font-size: 11px;
+    }
+
+    body > nav.navbar .btn-acceder {
+        padding: 7px !important;
+        font-size: 11px;
+    }
+}
+
+/* Animación del menú */
+@keyframes menuBaja {
+    from {
+        opacity: 0;
+        transform: translateY(-8px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Respeta la preferencia de movimiento reducido */
+@media (prefers-reduced-motion: reduce) {
+    body > nav.navbar *,
+    body > nav.navbar #menu-principal {
+        animation: none !important;
+        transition: none !important;
+    }
+}

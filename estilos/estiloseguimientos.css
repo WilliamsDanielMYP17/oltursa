@@ -1,0 +1,514 @@
+/* ============================================
+   SEGUIMIENTO DE ENVÍO - COMPLETO + ESTÉTICA DE LA IMAGEN
+============================================ */
+*{
+  padding: 0;
+  margin: 0;
+}
+.seguimiento-section {
+  width: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #333;
+}
+
+/* ---- HERO split ---- */
+.seguimiento-hero {
+  display: flex;
+  width: 100%;
+  min-height: 420px;
+  background: #f0f0f0;
+
+}
+
+.seg-hero-img {
+  flex: 1;
+  overflow: hidden;
+  background: #ddd;
+  min-height: 360px;
+}
+
+.seg-hero-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+.seg-hero-form {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 50px 48px;
+  background: #f0f0f0;
+}
+
+.seg-hero-form h1 {
+  font-size: 32px;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 28px;
+}
+
+/* Card blanca del input */
+.tracking-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 24px 22px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.06);
+  margin-bottom: 18px;
+}
+
+.tracking-card label {
+  display: block;
+  font-size: 14px;
+  color: #444;
+  margin-bottom: 12px;
+}
+
+.tracking-row {
+  display: flex;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 12px;
+}
+
+.tracking-row input {
+  flex: 1;
+  border: none;
+  outline: none;
+  padding: 12px 14px;
+  font-size: 14px;
+  color: #333;
+  font-family: inherit;
+}
+
+.tracking-row input::placeholder {
+  color: #aaa;
+}
+
+.tracking-row button {
+  background: #00AF42;
+  color: #fff;
+  border: none;
+  padding: 0 22px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  white-space: nowrap;
+  font-family: inherit;
+  transition: background 0.2s;
+}
+
+.tracking-row button:hover {
+  background: #078b35;
+}
+
+.tracking-help {
+  font-size: 13px;
+  color: #777;
+}
+
+.tracking-help a {
+  color: #00AF42;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.tracking-help a:hover {
+  text-decoration: underline;
+}
+
+.tracking-info {
+  font-size: 13px;
+  color: #999;
+  line-height: 1.5;
+}
+
+/* ---- SOLUCIONES (6 cards) ---- */
+.soluciones-section {
+  background: #fff;
+  padding: 60px 20px 40px;
+  text-align: center;
+}
+
+.soluciones-section h2 {
+  font-size: 28px;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 40px;
+}
+
+.soluciones-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.solucion-card {
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 14px;
+  padding: 36px 24px 30px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  transition: 0.25s;
+}
+
+.solucion-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+.sol-icon-circle {
+  width: 56px;
+  height: 56px;
+  background: #e8f8ee;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 18px;
+}
+
+.sol-icon-circle span {
+  font-size: 24px;
+  color: #00AF42;
+}
+
+.solucion-card h4 {
+  font-size: 16px;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 10px;
+}
+
+.solucion-card p {
+  font-size: 13px;
+  color: #777;
+  line-height: 1.5;
+}
+
+/* ---- FAQ ---- */
+.faq-section {
+  max-width: 700px;
+  margin: 20px auto 60px;
+  padding: 0 20px;
+}
+
+.faq-section h2 {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 30px;
+}
+
+.faq-item {
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  padding: 20px 22px;
+  margin-bottom: 14px;
+}
+
+.faq-item h4 {
+  font-size: 15px;
+  color: #1f2937;
+  margin-bottom: 8px;
+}
+
+.faq-item p {
+  font-size: 13px;
+  color: #6b7280;
+  line-height: 1.5;
+}
+/* CONTENEDOR DE LAS TRES COLUMNAS */
+.final {
+    background-color: gray;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 7px;
+}
+
+.row-final {
+    width: 100%;
+    max-width: 1040px;
+    margin: 0 auto;
+    display: flex;
+    align-items: stretch;
+    gap: 24px;
+    margin-top: 70px;
+}
+
+/* COLUMNAS */
+.column-final {
+    flex: 1;
+    min-width: 0;
+}
+
+/* TARJETAS */
+.card-final {
+    width: 100%;
+    height: 100%;
+    background-color: #dedcda;
+    border: none;
+    border-radius: 9px;
+    padding: 16px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+/* CABECERA */
+.header-final {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 20px 16px;
+    border-bottom: 2px solid #cbc9c7;
+    color: #263746;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+/* CONTENIDO DE CONTACTOS */
+.contenido-final {
+    padding: 18px 20px 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
+}
+
+.enlace-contacto {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    color: #111;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.enlace-contacto>i {
+    width: 22px;
+    text-align: center;
+    font-size: 21px;
+    color: #111;
+}
+
+.enlace-contacto span {
+    color: #737373;
+    line-height: 1.5;
+}
+
+.enlace-contacto strong {
+    color: #111;
+    font-weight: normal;
+}
+
+.enlace-contacto:hover,
+.lista-final a:hover {
+    color: #00af42;
+}
+
+/* LISTAS DE DESTINOS Y LINKS */
+.lista-final {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    padding: 8px 20px 10px;
+    margin-top: 3px;
+}
+
+.lista-final a {
+    color: #111;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px 0;
+    transition: color 0.2s;
+}
+
+.footer {
+    background-color: #f5f5f5;
+    padding: 40px 60px 30px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    color: #4b5563;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-top: 80px;
+}
+
+/* Lado izquierdo */
+.footer-left {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.logo {
+    font-size: 32px;
+    font-weight: 700;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.logo-img {
+    width: 36px;
+    height: 28px;
+    margin-right: -60px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 12px;
+}
+
+.social-icons a {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 16px;
+    text-decoration: none;
+    transition: transform 0.2s;
+}
+
+.social-icons a:hover {
+    transform: scale(1.1);
+}
+
+.facebook {
+    background: #1877f2;
+}
+
+.youtube {
+    background: #ff0000;
+}
+
+.instagram {
+    background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+}
+
+.tiktok {
+    background: #000000;
+}
+
+.lang-selector {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    padding: 6px 12px;
+    background: white;
+    font-size: 14px;
+    cursor: pointer;
+    width: fit-content;
+}
+
+.lang-selector img {
+    width: 20px;
+    height: 14px;
+    object-fit: cover;
+}
+
+/* Lado derecho */
+.footer-right {
+    text-align: left;
+}
+
+.footer-right h4 {
+    font-size: 16px;
+    font-weight: 600;
+    color: #1f2937;
+    margin-bottom: 16px;
+}
+
+.footer-right ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-right li {
+    margin-bottom: 12px;
+}
+
+.footer-right a {
+    color: #4b5563;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.2s;
+}
+
+.footer-right a:hover {
+    color: #16a34a;
+}
+
+.complaints {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.complaints img {
+    width: 28px;
+    height: 20px;
+}
+
+/* Línea y copyright */
+.footer-bottom {
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid #e5e7eb;
+    text-align: center;
+    font-size: 13px;
+    color: #6b7280;
+}
+
+/* ---------- RESPONSIVE ---------- */
+@media (max-width: 800px) {
+  .seguimiento-hero {
+    flex-direction: column;
+  }
+
+  .seg-hero-img {
+    height: 280px;
+    min-height: 280px;
+  }
+
+  .seg-hero-form {
+    padding: 36px 24px;
+  }
+
+  .soluciones-grid {
+    grid-template-columns: 1fr;
+    max-width: 360px;
+  }
+
+  .tracking-row {
+    flex-direction: column;
+  }
+
+  .tracking-row button {
+    padding: 12px 22px;
+  }
+}
